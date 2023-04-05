@@ -2,6 +2,7 @@ package com.example.gitbranchcal
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import com.example.gitbranchcal.databinding.ActivityMainBinding
 import net.objecthunter.exp4j.ExpressionBuilder
 import java.lang.Exception
@@ -58,6 +59,8 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
+        multiply()
+
     }
 
     private fun appendOnExpression(string: String, canClear: Boolean){
@@ -69,6 +72,12 @@ class MainActivity : AppCompatActivity() {
             binding.tvEquation.append(string)
             binding.tvAnswer.text = ""
         }
+    }
+
+    private fun multiply(){
+        val integer = 10 * 10
+
+        Log.e("multiply", "test value: $integer")
     }
 
 }
