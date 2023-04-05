@@ -75,7 +75,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun addition(){
-        val integer = 10 * 10
+        val integer = 10 + 10
 
         Log.i("addition", "test value: $integer")
     }
