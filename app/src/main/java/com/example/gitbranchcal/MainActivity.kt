@@ -59,6 +59,7 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
+        addition()
         multiply()
         subtract()
 
@@ -73,6 +74,12 @@ class MainActivity : AppCompatActivity() {
             binding.tvEquation.append(string)
             binding.tvAnswer.text = ""
         }
+    }
+
+    private fun addition(){
+        val integer = 10 + 10
+
+        Log.e("addition", "test value: $integer")
     }
 
     private fun multiply(){
