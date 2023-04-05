@@ -60,6 +60,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         multiply()
+        subtract()
 
     }
 
@@ -78,6 +79,12 @@ class MainActivity : AppCompatActivity() {
         val integer = 10 * 10
 
         Log.e("multiply", "test value: $integer")
+    }
+
+    private fun subtract(){
+        val integer = 10 - 10
+
+        Log.e("subtract", "test value: $integer")
     }
 
 }
